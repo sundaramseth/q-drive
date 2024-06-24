@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectDestination, selectOrigin, setTravelTimeInformation } from "../slices/navSlice";
 import MapViewDirections from "react-native-maps-directions";
 import { GOOGLE_MAP_APIKEY } from "@env";
+import {PROVIDER_GOOGLE} from "react-native-maps";
 
 const Map = () => {
 
@@ -49,6 +50,8 @@ useEffect(()=>{
 
     return(
     <MapView
+    provider={PROVIDER_GOOGLE}
+
     ref={mapRef}
        style={tw`flex-1`}
        mapType="mutedStandard"

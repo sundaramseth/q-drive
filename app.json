@@ -15,13 +15,24 @@
       "supportsTablet": true
     },
     "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCp807PueVX8JvxtBPBuDkKqF9PVar-330"
+        }
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sundaramseth.rikshawala"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3b4c322f-3612-451d-afcf-a7b1b5a9be85"
+      }
     }
   }
 }
